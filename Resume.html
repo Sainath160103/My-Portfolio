@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+<title> | Portfolio</title>
+
+<style>
+
+/* ==========================
+   RESET
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0a192f;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#112240;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#64ffda;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:#64ffda;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#64ffda;
+}
+
+/* ==========================
+   HOME SECTION
+========================== */
+.home{
+    min-height:85vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:50px 8%;
+    gap:60px;
+}
+
+.content{
+    flex:1;
+}
+
+.content h4{
+    color:#64ffda;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+.content h1{
+    font-size:65px;
+    margin:10px 0;
+}
+
+.content h2{
+    color:#1df4e2;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#ccd6f6;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#64ffda;
+    color:#0a192f;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.image{
+    flex:1;
+    text-align:center;
+}
+
+.image img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #64ffda;
+}
+
+/* ==========================
+   ABOUT SECTION
+========================== */
+.about{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.about h2{
+    color:#64ffda;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    color:#ccd6f6;
+}
+
+/* ==========================
+   SKILLS
+========================== */
+.skills{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.skills h2{
+    color:#64ffda;
+    margin-bottom:30px;
+}
+
+.skill-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill-item{
+    background:#112240;
+    padding:12px 25px;
+    border-radius:8px;
+    border:1px solid #233554;
+}
+
+/* ==========================
+   PROJECTS
+========================== */
+.projects{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.projects h2{
+    color:#64ffda;
+    margin-bottom:30px;
+}
+
+.project-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.project-card{
+    width:300px;
+    background:#112240;
+    padding:20px;
+    border-radius:10px;
+}
+
+.project-card h3{
+    color:#64ffda;
+    margin-bottom:10px;
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0, 0, 0, 0.8);
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .content h1{
+        font-size:42px;
+    }
+
+    .image img{
+        width:250px;
+        height:250px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+        <nav>
+            <h1 class="logo">My Portfolio</h1>
+
+             <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html"class="active">About</a></li>
+        <li><a href="skill.html"class="active">Skills</a></li>
+        <li><a href="Project.html" class="active">Project</a></li>
+         <li><a href="certification.html" class="active">certification</a></li>
+         <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="contact.html"class="active">Contact</a></li>
+      </ul>
+
+            <button id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+<section class="home">
+
+    <div class="content">
+
+        <h2>Hello, I'm Sainath Lingampalli</h2>
+
+        <h2>Data Analyst | AI/ML Enthusiast</h2>
+
+        <p>
+                Passionate Data Analyst and AI/ML Enthusiast with expertise in Python, SQL, Power BI, and Machine Learning. Skilled at transforming complex data into meaningful insights, building predictive models, and creating data-driven solutions to solve real-world business challenges.
+            </p>
+
+        <a href="D:\portFELLIO WEBSITE\portFELLIO WEBSITE\files\Resume. (1).pdf"class="btn">View Resume</a>
+
+    </div>
+
+    <div class="image">
+        <img src="D:\portFELLIO WEBSITE\portFELLIO WEBSITE\images\ChatGPT Image Jun 23, 2026, 11_27_22 PM.png"alt="Profile">
+    </div>
+
+</section>
+
+
+<footer>
+        <p>© 2026 Sainath Lingampalli | All Rights Reserved</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,276 @@
+
+/* ===================================
+   PROFESSIONAL PORTFOLIO WEBSITE CSS
+=================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#0a192f,#112240,#1a365d);
+    color:#ffffff;
+    line-height:1.6;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(17,34,64,0.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#64ffda;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#64ffda;
+}
+
+#themeToggle{
+    background:none;
+    border:none;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* ==========================
+   HOME SECTION
+========================== */
+
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:40vh;
+    gap:40px;
+    padding:0 3%;
+}
+.content{
+    flex:1;
+}
+
+.content h3{
+    color:#64ffda;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.content h1{
+    font-size:70px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.content h2{
+    font-size:32px;
+    color:077A7D;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:18px;
+    max-width:650px;
+    color:#ccd6f6;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#64ffda;
+    color:#0a192f;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 25px rgba(100,255,218,0.4);
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid #64ffda;
+    color:#64ffda;
+    margin-left:15px;
+}
+
+/* Profile Image */
+
+.image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.image img{
+    width:420px;
+    height:420px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #64ffda;
+    box-shadow:
+    0 0 25px rgba(100,255,218,0.4),
+    0 0 60px rgba(100,255,218,0.3);
+    transition:0.4s;
+}
+
+.image img:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   SECTION COMMON STYLE
+========================== */
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    color:#64ffda;
+    margin-bottom:40px;
+}
+
+
+/* Projects Section */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+header{
+    background:#0a192f;
+    padding:20px 50px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h2 {
+  padding: 15px;
+  font-size: 1.5em;
+  color: #ffdd57;
+}
+
+.project-card p {
+  padding: 0 15px;
+  color: #e1dcdc;
+}
+
+.btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  background: #ffdd57;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffd700;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #dcdde1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2em;
+  }
+
+  .hero h2 {
+    font-size: 1.1em;
+  }
+}

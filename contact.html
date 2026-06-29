@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainath Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h1 class="logo">My Portfolio</h1>
+
+             <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html"class="active">About</a></li>
+         <li><a href="skill.html"class="active">Skills</a></li>
+        <li><a href="Project.html" class="active">Project</a></li>
+          <li><a href="certification.html" class="active">certification</a></li>
+         <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="contact.html"class="active">Contact</a></li>
+      </ul>
+
+            <button id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+<style>
+
+/* ==========================
+   CONTACT PAGE CSS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0a192f;
+    color:white;
+}
+
+/* Contact Section */
+
+.contact{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:80px 10%;
+}
+
+.contact-container{
+    width:100%;
+    display:flex;
+    gap:60px;
+    align-items:center;
+}
+
+/* Left Side */
+
+.contact-info{
+    flex:1;
+}
+
+.contact-info h4{
+    color:#64ffda;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.contact-info h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    color:#ccd6f6;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.info-box{
+    background:#112240;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.info-box:hover{
+    transform:translateX(10px);
+}
+
+.info-box h3{
+    color:#64ffda;
+    margin-bottom:8px;
+}
+
+/* Right Side Form */
+
+.contact-form{
+    flex:1;
+}
+
+.contact-form form{
+    background:#112240;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(100,255,218,.15);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    outline:none;
+    background:#0a192f;
+    border:1px solid #233554;
+    color:white;
+    border-radius:8px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#64ffda;
+}
+
+.contact-form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#64ffda;
+    color:#0a192f;
+    font-weight:600;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(100,255,218,.4);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .contact-container{
+        flex-direction:column;
+    }
+
+    .contact-info{
+        text-align:center;
+    }
+
+    .contact-info h1{
+        font-size:40px;
+    }
+}
+
+</style>
+
+</head>
+<body>
+
+<section class="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Feel free to contact me for internships,
+                projects, collaborations, or opportunities
+                related to Data Analytics, Machine Learning,
+                and Web Development.
+            </p>
+
+            <div class="info-box">
+                <h3>📧 Email</h3>
+                <p>sailingampalli1601@gmail.com</p>
+            </div>
+
+            <div class="info-box">
+                <h3>📱 Phone</h3>
+                <p>8329005016</p>
+            </div>
+
+            <div class="info-box">
+                <h3>📍 Location</h3>
+                <p>Maharashtra, India</p>
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+
+           <form action="/submit" method="POST">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<input type="text" name="subject" placeholder="Subject" required>
+
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<footer>
+        <p>© 2026 Sainath Lingampalli | All Rights Reserved</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+</html>
+
